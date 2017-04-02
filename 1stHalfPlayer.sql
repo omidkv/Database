@@ -6,6 +6,9 @@ insert into teams values('Chelsea', 1905, 'Stamford Bridge', 'Roman Abramovich')
 insert into teams values('Crystal Palace', 1905, 'Selhurst Park', 'Steve Parish');
 insert into teams values('Everton', 1878, 'Goodison Park', 'Farhad Moshiri');
 insert into teams values('Hull City', 1904, 'KCOM Stadium', 'Assem Allam');
+insert into teams values('Leicester City', 1884, 'King Power Stadium', 'King Power International Group');
+insert into teams values('Liverpool', 1892, 'Anfield', 'Fenway Sports Group');
+insert into teams values('Manchester City', 1880, 'City of Manchester Stadium', 'City Football Group');
 
 --Arsenal players
 insert into players values('David Ospina', 13, 'Arsenal', 'Colombia', 'GoalKeeper');
@@ -110,9 +113,9 @@ insert into players values('Ola Aina', 34, 'Chelsea', 'England', 'Defender');
 insert into players values('Marcos Alonso', 3, 'Chelsea', 'Spain', 'Defender');
 insert into players values('David Luiz', 30, 'Chelsea', 'Brazil', 'Defender');
 insert into players values('Nathan Ake', 6, 'Chelsea', 'Netherlands', 'Defender');
-insert into player values('Cesc Fabergas', 4, 'Chelsea', 'Spain', 'Midfielder');
-insert into player values('Eden Hazard', 10, 'Chelsea', 'Belgium', 'Midfielder');
-insert into player values('Nemanja Matic', 21, 'Chelsea', 'Serbia', 'Midfielder');
+insert into players values('Cesc Fabergas', 4, 'Chelsea', 'Spain', 'Midfielder');
+insert into players values('Eden Hazard', 10, 'Chelsea', 'Belgium', 'Midfielder');
+insert into players values('Nemanja Matic', 21, 'Chelsea', 'Serbia', 'Midfielder');
 insert into players values('William', 22, 'Chelsea', 'Brazil', 'Midfielder');
 insert into players values('Ruben Loftus-Cheek', 14, 'Chelsea', 'England', 'Midfielder');
 insert into players values('Victor Moses', 15, 'Chelsea', 'Nigeria', 'Midfielder');
@@ -220,4 +223,93 @@ insert into players values('Will Keane', 19, 'Hull City', 'England', 'Forward');
 insert into players values('Dieumerci Mbokani', 18, 'Hull City', 'Congo', 'Forward');
 insert into players values('Jarrod Bowen', 29, 'Hull City', 'England', 'Forward');
 insert into players values('Oumar Niasee', 24, 'Hull City', 'Senegal', 'Forward');
-    
+
+--Leicester City players
+insert into players values('Kasper Schmeichel', 1, 'Leicester City', 'Denmark', 'GoalKeeper');
+insert into players values('Ben Hamer', 12, 'Leicester City', 'England', 'GoalKeeper');
+insert into players values('Ron-Robert Zieler', 21, 'Leicester City', 'Germany', 'GoalKeeper');
+insert into players values('Wes Morgan', 5, 'Leicester City', 'Jamaica', 'Defender');
+insert into players values('Marcin Wasilewski', 27, 'Leicester City', 'Poland', 'Defender');
+insert into players values('Danny Simpson', 17, 'Leicester City', 'England', 'Defender');
+insert into players values('Christian Fuchs', 28, 'Leicester City', 'Austria', 'Defender');
+insert into players values('Ben Chilwell', 3, 'Leicester City', 'England', 'Defender');
+insert into players values('Robert Huth', 6, 'Leicester City', 'Germany', 'Defender');
+insert into players values('Yohan Benalouane', 29, 'Leicester City', 'Tunisia', 'Defender');
+insert into players values('Daniel Drinkwater', 4, 'Leicester City', 'England', 'Midfielder');
+insert into players values('Andy King', 10, 'Leicester City', 'Wales', 'Midfielder');
+insert into players values('Marc Albrighton', 11, 'Leicester City', 'England', 'Midfielder');
+insert into players values('Daniel Amartey', 13, 'Leicester City', 'Ghana', 'Midfielder');
+insert into players values('Riyad Mahrez', 26, 'Leicester City', 'Algeria', 'Midfielder');
+insert into players values('Demarai Gray', 22, 'Leicester City', 'England', 'Midfielder');
+insert into players values('Nampalys Mendy', 24, 'Leicester City', 'France', 'Midfielder');
+insert into players values('Bartosz Kapustka', 14, 'Leicester City', 'Poland', 'Midfielder');
+insert into players values('Wilfred Ndidi', 25, 'Leicester City', 'Nigeria', 'Midfielder');
+insert into players values('Jamie Vardy', 9, 'Leicester City', 'England', 'Forward');
+insert into players values('Shinji Okazaki', 20, 'Leicester City', 'Japan', 'Forward');
+insert into players values('Leonardo Ulloa', 23, 'Leicester City', 'Argentina', 'Forward');
+insert into players values('Ahmed Musa', 7, 'Leicester City', 'Nigeria', 'Forward');
+insert into players values('Islam Slimani', 19, 'Leicester City', 'Algeria', 'Forward');
+
+--Liverpool players
+insert into players values('Simon Mignolet', 22, 'Liverpool', 'Belgium', 'GoalKeeper');
+insert into players values('Loris Karius', 1, 'Liverpool', 'Germany', 'GoalKeeper');
+insert into players values('Alexander Manninger', 13, 'Liverpool', 'Austria', 'GoalKeeper');
+insert into players values('Nathaniel Clyne', 2, 'Liverpool', 'England', 'Defender');
+insert into players values('Dejan Lovren', 6, 'Liverpool', 'Croatia', 'Defender');
+insert into players values('Joseph Gomez', 12, 'Liverpool', 'England', 'Defender');
+insert into players values('Alberto Moreno', 18, 'Liverpool', 'Spain', 'Defender');
+insert into players values('Joel Matip', 32, 'Liverpool', 'Cameroon', 'Defender');
+insert into players values('Ragnar Klavan', 17, 'Liverpool', 'Estonia', 'Defender');
+insert into players values('Connor Randall', 56, 'Liverpool', 'England', 'Defender');
+insert into players values('Tren Alexander-Arnold', 66, 'Liverpool', 'England', 'Defender');
+insert into players values('Jordan Williams', 49, 'Liverpool', 'Wales', 'Defender');
+insert into players values('James Milner', 7, 'Liverpool', 'England', 'Defender');
+insert into players values('Philippe Coutinho', 10, 'Liverpool', 'Brazil', 'Midfielder');
+insert into players values('Jordan Henderson', 14, 'Liverpool', 'England', 'Midfielder');
+insert into players values('Adam Lallana', 20, 'Liverpool', 'England', 'Defender');
+insert into players values('Lucas Leiva', 21, 'Liverpool', 'Brazil', 'Midfielder');
+insert into players values('Emre Can', 23, 'Liverpool', 'Germany', 'Midfielder');
+insert into players values('Sadio Mane', 19, 'Liverpool', 'Senegal', 'Midfielder' );
+insert into players values('Georginio Wijnaldum', 5, 'Liverpool', 'Netherlands', 'Midfielder');
+insert into players values('Kevin Stewart', 35, 'Liverpool', 'England', 'Midfielder');
+insert into players values('Marko Grujic', 16, 'Liverpool', 'Serbia', 'Midfielder');
+insert into players values('Sheyi Ojo', 54, 'Liverpool', 'England', 'Midfielder');
+insert into players values('Ovie Ejaria', 53, 'Liverpool', 'England', 'Midfielder');
+insert into players values('Ben Woodburn', 58, 'Liverpool', 'Wales', 'Midfielder');
+insert into players values('Harry Wilson', 56, 'Liverpool', 'Wales', 'Midfielder');
+insert into players values('Paulinho', 61, 'Liverpool', 'Portugal', 'Midfielder');
+insert into players values('Roberto Firmino', 11, 'Liverpool', 'Brazil', 'Forward');
+insert into players values('Daniel Sturridge', 15, 'Liverpool', 'England', 'Forward');
+insert into players values('Divock Origi', 27, 'Liverpool', 'Belgium', 'Forward');
+insert into players values('Danny Ings', 28, 'Liverpool', 'England', 'Forward');
+
+--Manchester City players
+insert into players values('Wily Caballero', 13, 'Manchester City', 'Argentina', 'GoalKeeper');
+insert into players values('Angus Gunn', 54, 'Manchester City', 'England', 'GoalKeeper');
+insert into players values('Claudio Bravo', 1, 'Manchester City', 'Chile', 'GoalKeeper');
+insert into players values('Bacary Sagna', 3, 'Manchester City', 'France', 'Defender');
+insert into players values('Vincent Kompany', 4, 'Manchester City', 'Belgium', 'Defender');
+insert into players values('Pablo Zabaleta', 5, 'Manchester City', 'Argentina', 'Defender');
+insert into players values('Aleksandar Kolarov', 11, 'Manchester City', 'Serbia', 'Defender');
+insert into players values('Gael Clichy', 22, 'Manchester City', 'France', 'Defender');
+insert into players values('Nicolas Otamendi', 30, 'Manchester City', 'Argentina', 'Defender');
+insert into players values('John Stones', 24, 'Manchester City', 'England', 'Defender');
+insert into players values('Tosin Adarabioyo', 53, 'Manchester City', 'England', 'Defender');
+insert into players values('Fernando', 6, 'Manchester City', 'Brazil', 'Midfielder');
+insert into players values('Jesus Navas', 15, 'Manchester City', 'Spain', 'Midfielder');
+insert into players values('Kevin De Bruyne', 17, 'Manchester City', 'Belgium', 'Midfielder');
+insert into players values('Fabian Delph', 18, 'Manchester City', 'England', 'Midfielder');
+insert into players values('David Silva', 21, 'Manchester City', 'Spain', 'Midfielder');
+insert into players values('Fernandinho', 25, 'Manchester City', 'Brazil', 'Midfielder');
+insert into players values('Yaya Toure', 42, 'Manchester City', 'Cote D''Ivoire', 'Midfielder');
+insert into players values('Ilkay Gundogan', 8, 'Manchester City', 'Germany', 'Midfielder');
+insert into players values('Leroy Sane', 19, 'Manchester City', 'Germany', 'Midfielder');
+insert into players values('Aleix Garcia', 75, 'Manchester City', 'Spain', 'Midfielder');
+insert into players values('Brahim Diaz', 55, 'Manchester City', 'Spain', 'Midfielder');
+insert into players values('Raheem Sterling', 7, 'Manchester City', 'England', 'Forward');
+insert into players values('Sergio Aguero', 10, 'Manchester City', 'Argentina', 'Forward');
+insert into players values('Kelechi Iheanacho', 72, 'Manchester City', 'Nigeria', 'Forward');
+insert into players values('Nolito', 9, 'Manchester City', 'Spain', 'Forward');
+insert into players values('Phil Foden', 80, 'Manchester City', 'England', 'Forward');
+insert into players values('Gabriel Jesus', 33, 'Manchester City', 'Brazil', 'Forward');
+  
