@@ -225,14 +225,99 @@ insert into players values('Vincent Janssen',9,'Tottenham Hotspur','Netherlands'
 
 
 insert into teams values ('Watford', 1881, 'Vicarage Road', 'Gino Pozzo');
+
+insert into players values('Heurelho Gomes',1,'Watford','Brazil','GoalKeeper');
+insert into players values('Costel Pantilimon',30,'Watford','Romania','GoalKeeper');
+insert into players values('Giedrius Arlauskis',34,'Watford','Lithuania','GoalKeeper');
+insert into players values('Rene Gilmartin',13,'Watford','Ireland','GoalKeeper');
+insert into players values('Miguel Britos',3,'Watford','Uruguay','Defender');
+insert into players values('Sebastian Prodl',5,'Watford','Austria','Defender');
+insert into players values('Craig Cathcart',15,'Watford','Northern Ireland','Defender');
+insert into players values('Jose Holebas',25,'Watford','Greece','Defender');
+insert into players values('Christian Kabasele',27,'Watford','Belgium','Defender');
+insert into players values('Juan Zuniga',18,'Watford','Colombia','Defender');
+insert into players values('Brice Dja Djedje',26,'Watford','Cote DIvoire','Defender');
+insert into players values('Younes Kaboul',4,'Watford','France','Defender');
+insert into players values('Daryl Janmaat',22,'Watford','Netherlands','Defender');
+insert into players values('Adrian Mariappa',6,'Watford','Jamaica','Defender');
+insert into players values('Andrew Eleftheriou',42,'Watford','Cyprus','Defender');
+insert into players values('Brandon Mason',32,'Watford','England','Defender');
+insert into players values('Charlie Rowan',38,'Watford','England','Defender');
+insert into players values('Abdoulaye Doucoure',16,'Watford','France','Midfielder');
+insert into players values('Valon Behrami',11,'Watford','Switzerland','Midfielder');
+insert into players values('Nordin Amrabat',7,'Watford','Morocco','Midfielder');
+insert into players values('Ben Watson',23,'Watford','England','Midfielder');
+insert into players values('Etienne Capoue',29,'Watford','France','Midfielder');
+insert into players values('Roberto Pereyra',37,'Watford','Argentina','Midfielder');
+insert into players values('Carl Stewart',35,'Watford','England','Midfielder');
+insert into players values('Tom Cleverley',8,'Watford','England','Midfielder');
+insert into players values('Troy Deeney',9,'Watford','England','Forward');
+insert into players values('Isaac Success',10,'Watford','Nigeria','Forward');
+insert into players values('Stefano Okaka',33,'Watford','Italy','Forward');
+insert into players values('MBaye Niang',21,'Watford','France','Forward');
+insert into players values('Mauro Zarate',20,'Watford','Argentina','Forward');
+
+
 insert into teams values ('West Bromwich Albion', 1878, 'The Hawthorns', 'Guochuan Lai');
+
+insert into players values('Ben Foster',1,'West Bromwich Albion','England','GoalKeeper');
+insert into players values('Boaz Myhill',13,'West Bromwich Albion','Wales','GoalKeeper');
+insert into players values('Jack Rose',38,'West Bromwich Albion','England','GoalKeeper');
+insert into players values('Jonny Evans',6,'West Bromwich Albion','Northern Ireland','Defender');
+insert into players values('Gareth McAuley',23,'West Bromwich Albion','Northern Ireland','Defender');
+insert into players values('Craig Dawson',25,'West Bromwich Albion','England','Defender');
+insert into players values('Kane Wilson',49,'West Bromwich Albion','England','Defender');
+insert into players values('Brendan Galloway',20,'West Bromwich Albion','England','Defender');
+insert into players values('Nyom',2,'West Bromwich Albion','Cameroon','Defender');
+insert into players values('Marc Wilson',12,'West Bromwich Albion','Ireland','Defender');
+insert into players values('Claudio Yacob',5,'West Bromwich Albion','Argentina','Midfielder');
+insert into players values('James Morrison',7,'West Bromwich Albion','Scotland','Midfielder');
+insert into players values('Chris Brunt',11,'West Bromwich Albion','Northern Ireland','Midfielder');
+insert into players values('James McClean',14,'West Bromwich Albion','Ireland','Midfielder');
+insert into players values('Darren Fletcher',24,'West Bromwich Albion','Scotland','Midfielder');
+insert into players values('Jonathan Leko',45,'West Bromwich Albion','England','Midfielder');
+insert into players values('Matt Phillips',10,'West Bromwich Albion','Scotland','Midfielder');
+insert into players values('Sam Field',47,'West Bromwich Albion','England','Midfielder');
+insert into players values('Nacer Chadli',22,'West Bromwich Albion','Belgium','Midfielder');
+insert into players values('Rekeem Harper',34,'West Bromwich Albion','England','Midfielder');
+insert into players values('Salomon Rondon',9,'West Bromwich Albion','Venezuela','Forward');
+insert into players values('Hal Robson-Kanu',4,'West Bromwich Albion','Wales','Forward');
+
+
+
+
 insert into teams values ('West Ham United', 1895, 'London Stadium', 'David Sullivan');
 
-
-
-
-
-
+insert into players values('Darren Randolph',1,'West Ham United','Ireland','GoalKeeper');
+insert into players values('Adrian',13,'West Ham United','Spain','GoalKeeper');
+insert into players values('Raphael Spiegel',34,'West Ham United','Switzerland','GoalKeeper');
+insert into players values('Winston Reid',2,'West Ham United','New Zealand','Defender');
+insert into players values('Aaron Cresswell',3,'West Ham United','England','Defender');
+insert into players values('James Collins',19,'West Ham United','Wales','Defender');
+insert into players values('Angelo Ogbonna',21,'West Ham United','Italy','Defender');
+insert into players values('Sam Byram',22,'West Ham United','England','Defender');
+insert into players values('Arthur Masuaku',26,'West Ham United','France','Defender');
+insert into players values('Alvaro Arbeloa',5,'West Ham United','Spain','Defender');
+insert into players values('Doneil Henry',25,'West Ham United','Canada','Defender');
+insert into players values('Jose Fonte',23,'West Ham United','Portugal','Defender');
+insert into players values('Cheikhou Kouyate',8,'West Ham United','Senegal','Midfielder');
+insert into players values('Pedro Obiang',14,'West Ham United','Spain','Midfielder');
+insert into players values('Mark Noble',16,'West Ham United','England','Midfielder');
+insert into players values('Michail Antonio',30,'West Ham United','England','Midfielder');
+insert into players values('Havard Nordtveit',4,'West Ham United','Norway','Midfielder');
+insert into players values('Sofiane Feghouli',7,'West Ham United','Algeria','Midfielder');
+insert into players values('Gokhan Tore',17,'West Ham United','Turkey','Midfielder');
+insert into players values('Edimilson Fernandes',31,'West Ham United','Switzerland','Midfielder');
+insert into players values('Grady Diangana',55,'West Ham United','England','Midfielder');
+insert into players values('Manuel Lanzini',10,'West Ham United','Argentina','Midfielder');
+insert into players values('Domingos Quina',36,'West Ham United','Portugal','Midfielder');
+insert into players values('Declan Rice',41,'West Ham United','Ireland','Midfielder');
+insert into players values('Robert Snodgrass',11,'West Ham United','Scotland','Midfielder');
+insert into players values('Andy Carroll',9,'West Ham United','England','Forward');
+insert into players values('Diafra Sakho',15,'West Ham United','Senegal','Forward');
+insert into players values('Andre Ayew',20,'West Ham United','Ghana','Forward');
+insert into players values('Jonathan Calleri',28,'West Ham United','Argentina','Forward');
+insert into players values('Ashley Fletcher',24,'West Ham United','England','Forward');
 
 
 
