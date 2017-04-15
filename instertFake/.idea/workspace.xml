@@ -33,11 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="south.csv" pinned="false" current-in-tab="true">
+      <file leaf-file-name="south.csv" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/south.csv">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="107">
-              <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="18" />
+              <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -75,11 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gameEvents.sql" pinned="false" current-in-tab="false">
+      <file leaf-file-name="gameEvents.sql" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gameEvents.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="9601" column="52" lean-forward="false" selection-start-line="9601" selection-start-column="52" selection-end-line="9601" selection-end-column="52" />
+            <state relative-caret-position="8">
+              <caret line="4639" column="62" lean-forward="false" selection-start-line="4639" selection-start-column="62" selection-end-line="4639" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -128,6 +128,10 @@
       <find>que</find>
       <find>24,,</find>
       <find>events</find>
+      <find>'Southampton','So</find>
+      <find>'Southampton', 'S</find>
+      <find>'Jack Steph</find>
+      <find>'Sunderland'</find>
     </findStrings>
     <replaceStrings>
       <replace>stadiums</replace>
@@ -144,10 +148,10 @@
       <list>
         <option value="$PROJECT_DIR$/src/player.java" />
         <option value="$PROJECT_DIR$/src/insert.java" />
-        <option value="$PROJECT_DIR$/gameEvents.sql" />
         <option value="$PROJECT_DIR$/src/DataParse.java" />
         <option value="$PROJECT_DIR$/src/Insert.java" />
         <option value="$PROJECT_DIR$/south.csv" />
+        <option value="$PROJECT_DIR$/gameEvents.sql" />
       </list>
     </option>
   </component>
@@ -520,7 +524,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3882545" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3882545" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -649,14 +653,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gameEvents.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="9601" column="52" lean-forward="false" selection-start-line="9601" selection-start-column="52" selection-end-line="9601" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Insert.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
@@ -670,7 +666,15 @@
     <entry file="file://$PROJECT_DIR$/south.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="107">
-          <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="18" />
+          <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gameEvents.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8">
+          <caret line="4639" column="62" lean-forward="false" selection-start-line="4639" selection-start-column="62" selection-end-line="4639" selection-end-column="62" />
           <folding />
         </state>
       </provider>
