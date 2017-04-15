@@ -16,7 +16,7 @@ public class Insert
   static HashMap<String, teams> teamsHash = new HashMap<>();
   Random rand = new Random();
 
-  String eventFile = "./gameEvents15.sql";
+  String eventFile = "./gameEvents10.sql";
 
   BufferedWriter bw;
   FileWriter fw;
@@ -618,8 +618,14 @@ public Insert()
   public void insertrest()
   {
     teamsHash.put("Aston Villa", teams.Middles);
+    teamsHash.put("Blackburn",teams.AFC);
+    teamsHash.put("Fulham",teams.Watford);
     teamsHash.put("Newcastle",teams.Burnley);
-    teamsHash.put("Norwich",teams.Hull);
+    teamsHash.put("Wigan", teams.Crystal);
+    teamsHash.put("Wolves",teams.SouthHampton);
+    teamsHash.put("Bolton",teams.Leister);
+    teamsHash.put("Birmingham",teams.Hull);
+    teamsHash.put("Blackpool", teams.Swansea);
   }
 }
 

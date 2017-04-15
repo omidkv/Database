@@ -12,7 +12,7 @@ public class DataParse {
         String line = "";
         String query = "";
         String splitBy = ",";
-        int gameId = 313;
+        int gameId = 2213;
         String homeTeam ="";
         String awayTeam = "";
         String gameDate = "";
@@ -166,7 +166,7 @@ public class DataParse {
 
         DataParse testing = new DataParse();
 //        testing.readData("C://Users//Phillip//IdeaProjects//Parse//src//GameData1617.csv");
-        testing.readData("./GameData1516.csv");
+        testing.readData("./GameData1011.csv");
     }
 
 }
