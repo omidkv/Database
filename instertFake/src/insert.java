@@ -16,7 +16,7 @@ public class Insert
   static HashMap<String, teams> teamsHash = new HashMap<>();
   Random rand = new Random();
 
-  String eventFile = "./gameEvents.sql";
+  String eventFile = "./gameEvents15.sql";
 
   BufferedWriter bw;
   FileWriter fw;
@@ -594,6 +594,7 @@ public Insert()
     {
       teamsHash.put(team.teamName,team);
     }
+    insertrest();
     read();
     inser();
     setStadiums();
@@ -614,6 +615,24 @@ public Insert()
 
     }
   }
+  public void insertrest()
+  {
+    teamsHash.put("Aston Villa", teams.Middles);
+    teamsHash.put("Newcastle",teams.Burnley);
+    teamsHash.put("Norwich",teams.Hull);
+  }
 }
 
-
+//{
+//        Arsenal("Arsenal"), AFC("Bournemouth"), Burnley("Burnley"), Chelsea("Chelsea"),
+//        Crystal("Crystal Palace"), Everton("Everton"), Hull("Hull"), Leister("Leicester"),
+//        Liverpool("Liverpool"), ManCity("Man City"), ManU("Man United"),
+//        Middles("Middlesbrough"), SouthHampton("Southampton"), Stoke("Stoke"), Sunderland("Sunderland"),
+//        Swansea("Swansea"), Tottenham("Tottenham"), Watford("Watford"), WestBrom("West Brom"),
+//        WestHam("West Ham");
+//private String teamName;
+//
+//private teams(String team)
+//        {
+//        teamName = team;
+//        }

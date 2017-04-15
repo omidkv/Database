@@ -12,7 +12,7 @@ public class DataParse {
         String line = "";
         String query = "";
         String splitBy = ",";
-        int gameId = 0;
+        int gameId = 313;
         String homeTeam ="";
         String awayTeam = "";
         String gameDate = "";
@@ -50,8 +50,9 @@ public class DataParse {
 //                System.out.println(game.length);
                 //Finding all the values
                 gameId++;
-                homeTeam = game[1];
-                awayTeam = game[2];
+                homeTeam = Insert.teamsHash.get(game[1]).toString();
+                awayTeam = Insert.teamsHash.get(game[2]).toString();
+
                 gameDate = getDate(game[0]);
                 possession = getPossesion();
                 stadium = insert.stadiums.get(Insert.teams.get(homeTeam));
@@ -165,7 +166,7 @@ public class DataParse {
 
         DataParse testing = new DataParse();
 //        testing.readData("C://Users//Phillip//IdeaProjects//Parse//src//GameData1617.csv");
-        testing.readData("./GameData1617.csv");
+        testing.readData("./GameData1516.csv");
     }
 
 }
