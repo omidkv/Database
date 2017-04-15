@@ -47,13 +47,14 @@ public class DataParse {
                 // use comma as separator
                 String[] game = line.split(splitBy);
 
+//                System.out.println(game.length);
                 //Finding all the values
                 gameId++;
                 homeTeam = game[1];
                 awayTeam = game[2];
                 gameDate = getDate(game[0]);
                 possession = getPossesion();
-                //stadium = getStadium(homeTeam);
+                stadium = insert.stadiums.get(Insert.teams.get(homeTeam));
                 referee = game[9];
                 shotsA = game[11];
                 shotsH = game[10];
@@ -63,22 +64,22 @@ public class DataParse {
                 passesH = getNumPasses();
                 gameResult = getGameResult(game[5]);
                 attendance = getAttendance();
-                goalsA = game[5];
-                goalsH = game[4];
-                cornersA = game[18];
-                cornersH = game[17];
-                foulsA = game[16];
-                foulsH = game[15];
-                yellowA = game[20];
-                yellowH = game[19];
-                redA = game[22];
-                redH = game[21];
+                goalsA = game[4];
+                goalsH = game[3];
+                cornersA = game[17];
+                cornersH = game[16];
+                foulsA = game[15];
+                foulsH = game[14];
+                yellowA = game[19];
+                yellowH = game[18];
+                redA = game[21];
+                redH = game[20];
 
                 //This will be the final query that gets written to file
-                query = "insert into games values("+gameId+",'"+homeTeam+"','"+awayTeam+"',"+gameDate+","+possession+",'"+stadium+"','"+referee+"',"+shotsH+","+shotsA+","+shotsOTH+","+shotsOTA+","+passesH+","+passesA+",'"+gameResult+"',"+attendance+");";
+                query = "insert into games values("+gameId+",'"+homeTeam+"','"+awayTeam+"',"+gameDate+","+possession+","+stadium+",'"+referee+"',"+shotsH+","+shotsA+","+shotsOTH+","+shotsOTA+","+passesH+","+passesA+",'"+gameResult+"',"+attendance+");\n";
 
-                System.out.println(query);
-                Game game1 = new Game(gameId,homeTeam,awayTeam,goalsH,goalsA, cornersH, cornersH, foulsH, foulsA, yellowH, yellowA, redH, redA);
+                insert.bw.write(query);
+                Game game1 = new Game(gameId,homeTeam,awayTeam,goalsH,goalsA, cornersH, cornersA, foulsH, foulsA, yellowH, yellowA, redH, redA);
                 
                 insert.insertEvents(game1);
                 
@@ -147,9 +148,9 @@ public class DataParse {
 
     private String getAttendance()
     {
-        Integer attendacne = rand.nextInt((75000-25000) +1) + 25000;
+        Integer attendance = rand.nextInt((75000-25000) +1) + 25000;
 
-        return attendacne.toString();
+        return attendance.toString();
     }
 
     public static void main(String args[])
@@ -157,12 +158,13 @@ public class DataParse {
         String test = "13/08/16";
         String tester [] = test.split("/");
         for(String s : tester){
-            System.out.println(s);
+           System.out.println(s);
         }
 
 
         DataParse testing = new DataParse();
-        testing.readData("C://Users//Phillip//IdeaProjects//Parse//src//GameData1617.csv");
+//        testing.readData("C://Users//Phillip//IdeaProjects//Parse//src//GameData1617.csv");
+        testing.readData("./GameData1617.csv");
     }
 
 }

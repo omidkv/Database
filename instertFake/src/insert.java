@@ -6,12 +6,14 @@ import java.util.Random;
 /**
  * Created by family on 4/9/17.
  */
-public class insert
+public class Insert
 {
+
 
   HashMap<teams, ArrayList<player>> totals = new HashMap<>();
   HashMap <teams, String> stadiums = new HashMap<>();
 
+  static HashMap<String, teams> teamsHash = new HashMap<>();
   Random rand = new Random();
 
   String eventFile = "./gameEvents.sql";
@@ -83,7 +85,7 @@ public class insert
     {
       return teamName;
     }
-    public static teams get(String team){ return teams.valueOf(team);}
+    public static teams get(String team){ return teamsHash.get(team);}
   }
   void setStadiums()
   {
@@ -546,7 +548,7 @@ void writer(String team, String time, String gameId,player player,String event)
 }
   public static void main(String[] args)
   {
-    insert in = new insert();
+    Insert in = new Insert();
     in.read();
     in.inser();
     in.setStadiums();
@@ -586,9 +588,12 @@ void writer(String team, String time, String gameId,player player,String event)
       e.printStackTrace();
     }
   }
-public insert()
+public Insert()
   {
-
+    for(teams team : Insert.teams.values())
+    {
+      teamsHash.put(team.teamName,team);
+    }
     read();
     inser();
     setStadiums();

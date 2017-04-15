@@ -70,7 +70,7 @@ insert into players values('Cuco Martina',15,'Southampton','Curacao','Defender')
 insert into players values('Virgil van Dijk',17,'Southampton','Netherlands','Defender');
 insert into players values('Matt Targett',33,'Southampton','England','Defender');
 insert into players values('Jeremy Pied',26,'Southampton','France','Defender');
-insert into players values('Jack Stephens'24,,'Southampton','England','Defender');
+insert into players values('Jack Stephens',24,'Southampton','England','Defender');
 insert into players values('Ryan Bertrand',21,'Southampton','England','Defender');
 insert into players values('Martin Caceres',12,'Southampton','Uruguay','Defender');
 insert into players values('Jordy Clasie',4,'Southampton','Netherlands','Midfielder');
@@ -131,7 +131,7 @@ insert into players values('Mika',12,'Sunderland','Portugal','GoalKeeper');
 insert into players values('Billy Jones',2,'Sunderland','England','Defender');
 insert into players values('John OShea',16,'Sunderland','Ireland','Defender');
 insert into players values('Lamine Kone',23,'Sunderland','Cote DIvoire','Defender');
-insert into players values('Papy Dijilobodji',,'Sunderland','Senegal','Defender');
+insert into players values('Papy Dijilobodji',5,'Sunderland','Senegal','Defender');
 insert into players values('Donald Love',22,'Sunderland','Scotland','Defender');
 insert into players values('Paddy McNair',19,'Sunderland','Northern Ireland','Defender');
 insert into players values('Javier Manquillo',21,'Sunderland','Spain','Defender');

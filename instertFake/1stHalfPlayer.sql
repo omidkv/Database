@@ -1,4 +1,4 @@
---Teams
+
 insert into teams values('Arsenal', 1886, 'Emirates Stadium', 'Stan Kroenke');
 insert into teams values('Bournemouth', 1899, 'Dean Court', 'Maxim Demin');
 insert into teams values('Burnley', 1882, 'Turf Moor', 'Mike Garlick');
@@ -10,7 +10,6 @@ insert into teams values('Leicester', 1884, 'King Power Stadium', 'King Power In
 insert into teams values('Liverpool', 1892, 'Anfield', 'Fenway Sports Group');
 insert into teams values('Man City', 1880, 'City of Manchester Stadium', 'City Football Group');
 
---Arsenal players
 insert into players values('David Ospina', 13, 'Arsenal', 'Colombia', 'GoalKeeper');
 insert into players values('Petr Cech', 33, 'Arsenal', 'Czech Republic', 'GoalKeeper');
 insert into players values('Emiliano Martinez', 26, 'Arsenal', 'Argentina', 'GoalKeeper');
@@ -45,7 +44,6 @@ insert into players values('Takuma Asano', 0, 'Arsenal', 'Japan', 'Forward');
 insert into players values('Lucas Perez', 9, 'Arsenal', 'Spain', 'Forward');
 insert into players values('Josh Da Silva', 41, 'Arsenal', 'England', 'Forward');
 
---  AFC Bournemouth
 insert into players values('Adam Federici', 23, 'AFC Bournemouth', 'Australia', 'GoalKeeper');
 insert into players values('Artur Boruc', 1, 'AFC Bournemouth', 'Poland', 'GoalKeeper');
 insert into players values('Ryan Allsop', 21, 'AFC Bournemouth', 'England', 'GoalKeeper');
@@ -75,7 +73,6 @@ insert into players values('Joshua King', 17, 'AFC Bournemouth', 'Norway', 'Forw
 insert into players values('Benik Afobe', 9, 'AFC Bournemouth', 'Congo', 'Forward');
 insert into players values('Lys Mousset', 31, 'AFC Bournemouth', 'France', 'Forward');
 
---Burnley players
 insert into players values('Tom Heaton', 1, 'Burnley', 'England', 'GoalKeeper');
 insert into players values('Paul Robinson', 17, 'Burnley', 'England', 'GoalKeeper');
 insert into players values('Nick Pope', 29, 'Burnley', 'England', 'GoalKeeper');
@@ -101,7 +98,7 @@ insert into players values('Sam Vokes', 9, 'Burnley', 'Wales', 'Midfielder');
 insert into players values('Ashley Barnes', 10, 'Burnley', 'Austria', 'Midfielder');
 insert into players values('Daniel Agyei', 32, 'Burnley', 'England', 'Midfielder');
 
---Chelsea players
+
 insert into players values('Asmir Begovic', 1, 'Chelsea', 'Bosnia and Herzegovina', 'GoalKeeper');
 insert into players values('Thibaut Courtois', 13, 'Chelsea', 'Belgium', 'GoalKeeper');
 insert into players values('Eduardo', 37, 'Chelsea', 'Portugal', 'GoalKeeper');
@@ -127,7 +124,7 @@ insert into players values('Michy Batshuayi', 23, 'Chelsea', 'Belgium', 'Forward
 insert into players values('Dominic Solanke', 41, 'Chelsea', 'England', 'Forward');
 insert into players values('Kenedy', 0, 'Chelsea', 'Brazil', 'Forward');
 
---Crystal Palace players
+
 insert into players values('Julian Speroni', 1, 'Crystal Palace', 'Argentina', 'GoalKeeper');
 insert into players values('Wayne Hennessey', 13, 'Crystal Palace', 'Wales', 'GoalKeeper');
 insert into players values('Steve Mandanda', 30, 'Crystal Palace', 'France', 'GoalKeeper');
@@ -163,7 +160,6 @@ insert into players values('Christian Benteke', 17, 'Crystal Palace', 'Belgium',
 insert into players values('Loic Remy', 8, 'Crystal Palace', 'France', 'Forward');
 insert into players values('Jonathan Benteke', 15, 'Crystal Palace', 'Belgium', 'Forward');
 
---Everton players
 insert into players values('Joel Robles', 1, 'Everton', 'Spain', 'GoalKeeper');
 insert into players values('Chris Renshaw', 0, 'Everton', 'England', 'GoalKeeper');
 insert into players values('Maarten Stekelenburg', 22, 'Everton', 'Netherlands', 'GoalKeeper');
@@ -191,7 +187,7 @@ insert into players values('Enner Valencia', 19, 'Everton', 'Ecuador', 'Forward'
 insert into players values('Dominic Calvert-Lewin', 29, 'Everton', 'England', 'Forward');
 insert into players values('Ademola Lookman', 31, 'Everton', 'England', 'Forward');
 
---Hull City players
+
 insert into players values('Eldin Jakupovic', 16, 'Hull City', 'Switzerland', 'GoalKeeper');
 insert into players values('William Mannion', 35, 'Hull City', 'England', 'GoalKeeper');
 insert into players values('David Marshall', 23, 'Hull City', 'Scotland', 'GoalKeeper');
@@ -224,7 +220,6 @@ insert into players values('Dieumerci Mbokani', 18, 'Hull City', 'Congo', 'Forwa
 insert into players values('Jarrod Bowen', 29, 'Hull City', 'England', 'Forward');
 insert into players values('Oumar Niasee', 24, 'Hull City', 'Senegal', 'Forward');
 
---Leicester City players
 insert into players values('Kasper Schmeichel', 1, 'Leicester City', 'Denmark', 'GoalKeeper');
 insert into players values('Ben Hamer', 12, 'Leicester City', 'England', 'GoalKeeper');
 insert into players values('Ron-Robert Zieler', 21, 'Leicester City', 'Germany', 'GoalKeeper');
@@ -250,7 +245,7 @@ insert into players values('Leonardo Ulloa', 23, 'Leicester City', 'Argentina', 
 insert into players values('Ahmed Musa', 7, 'Leicester City', 'Nigeria', 'Forward');
 insert into players values('Islam Slimani', 19, 'Leicester City', 'Algeria', 'Forward');
 
---Liverpool players
+
 insert into players values('Simon Mignolet', 22, 'Liverpool', 'Belgium', 'GoalKeeper');
 insert into players values('Loris Karius', 1, 'Liverpool', 'Germany', 'GoalKeeper');
 insert into players values('Alexander Manninger', 13, 'Liverpool', 'Austria', 'GoalKeeper');
@@ -283,7 +278,6 @@ insert into players values('Daniel Sturridge', 15, 'Liverpool', 'England', 'Forw
 insert into players values('Divock Origi', 27, 'Liverpool', 'Belgium', 'Forward');
 insert into players values('Danny Ings', 28, 'Liverpool', 'England', 'Forward');
 
---Manchester City players
 insert into players values('Wily Caballero', 13, 'Manchester City', 'Argentina', 'GoalKeeper');
 insert into players values('Angus Gunn', 54, 'Manchester City', 'England', 'GoalKeeper');
 insert into players values('Claudio Bravo', 1, 'Manchester City', 'Chile', 'GoalKeeper');
