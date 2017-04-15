@@ -1,7 +1,4 @@
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -12,6 +9,12 @@ public class insert
 {
 
   HashMap<teams, ArrayList<player>> totals = new HashMap<>();
+  HashMap <teams, String> stadiums = new HashMap<>();
+
+  String eventFile = "./gameEvents";
+
+  BufferedWriter bw;
+  FileWriter fw;
 
   String arsenalFile = "./arsenal.csv";
   String bournFile = "./bourn.csv";
@@ -59,12 +62,12 @@ public class insert
 
   public enum teams
   {
-    Arsenal("'Arsenal'"), AFC("AFC Bournemouth"), Burnley("Burnley"), Chelsea("Chelsea"),
-    Crystal("Crystal Palace"), Everton("Everton"), Hull("Hull City"), Leister("Leicester City"),
-    Liverpool("Liverpool"), ManCity("Manchester City"), ManU("Manchester United"),
-    Middles("Middlesbrough"), SouthHampton("SouthHampton"), Stoke("Stoke City"), Sunderland("Sunderland"),
-    Swansea("Swansea City"), Tottenham("Tottenham Hotspur"), Watford("Watford"), WestBrom("West Brom Albion"),
-    WestHam("West Ham United");
+    Arsenal("Arsenal"), AFC("Bournemouth"), Burnley("Burnley"), Chelsea("Chelsea"),
+    Crystal("Crystal Palace"), Everton("Everton"), Hull("Hull"), Leister("Leicester"),
+    Liverpool("Liverpool"), ManCity("Man City"), ManU("Man United"),
+    Middles("Middlesbrough"), SouthHampton("Southampton"), Stoke("Stoke"), Sunderland("Sunderland"),
+    Swansea("Swansea"), Tottenham("Tottenham"), Watford("Watford"), WestBrom("West Brom"),
+    WestHam("West Ham");
     private String teamName;
 
     private teams(String team)
@@ -78,7 +81,36 @@ public class insert
       return teamName;
     }
   }
+  void setStadiums()
+  {
 
+    stadiums.put(teams.Arsenal,"'Emirates Stadium'");
+    stadiums.put(teams.AFC, "'Dean Court'");
+    stadiums.put(teams.Burnley, "'Turf Moor'");
+    stadiums.put(teams.Chelsea, "'Stamford Bridge'");
+    stadiums.put(teams.Crystal, "'Selhurst Park'");
+    stadiums.put(teams.Everton, "'Goodison Park'");
+    stadiums.put(teams.Hull, "'KCOM Stadium'");
+    stadiums.put(teams.Leister, "'King Power Stadium'");
+    stadiums.put(teams.Liverpool, "'Anfield'");
+    stadiums.put(teams.ManCity, "'City of Manchester Stadium'");
+
+    stadiums.put(teams.ManU, "'Old Trafford'");
+    stadiums.put(teams.Middles, "'Riverside Stadium'");
+    stadiums.put(teams.SouthHampton, "'St Marys Stadium'");
+    stadiums.put(teams.Stoke, "'bet365 Stadium'");
+    stadiums.put(teams.Sunderland, "Stadium of Light'");
+    stadiums.put(teams.Swansea, "'Liberty Stadium'");
+    stadiums.put(teams.Tottenham, "White Hart Lane'");
+    stadiums.put(teams.Watford, "'Vicarage Road'");
+    stadiums.put(teams.WestBrom, "'The Hawthorns'");
+    stadiums.put(teams.WestHam, "'London Stadium'");
+
+
+
+
+
+  }
   void inser()
   {
     totals.put(teams.Arsenal, arsenal);
@@ -402,10 +434,40 @@ public class insert
     }
   }
 
+void insertEvents()
+{
+  for(int i = 0; i < game.homeTeamScore; i++)
+  {
+    bw
+  }
+}
+void writer()
+{
+  String
+}
   public insert()
   {
     read();
     inser();
+    setStadiums();
+
+
+    try
+    {
+
+      String content = "This is the content to write into file\n";
+
+      fw = new FileWriter(eventFile);
+      bw = new BufferedWriter(fw);
+
+      System.out.println("Done");
+
+    } catch (IOException e)
+    {
+
+      e.printStackTrace();
+
+    }
   }
 }
 

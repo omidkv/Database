@@ -1,14 +1,14 @@
 --Teams
 insert into teams values('Arsenal', 1886, 'Emirates Stadium', 'Stan Kroenke');
-insert into teams values('AFC Bournemouth', 1899, 'Dean Court', 'Maxim Demin');
+insert into teams values('Bournemouth', 1899, 'Dean Court', 'Maxim Demin');
 insert into teams values('Burnley', 1882, 'Turf Moor', 'Mike Garlick');
 insert into teams values('Chelsea', 1905, 'Stamford Bridge', 'Roman Abramovich');
 insert into teams values('Crystal Palace', 1905, 'Selhurst Park', 'Steve Parish');
 insert into teams values('Everton', 1878, 'Goodison Park', 'Farhad Moshiri');
-insert into teams values('Hull City', 1904, 'KCOM Stadium', 'Assem Allam');
-insert into teams values('Leicester City', 1884, 'King Power Stadium', 'King Power International Group');
+insert into teams values('Hull', 1904, 'KCOM Stadium', 'Assem Allam');
+insert into teams values('Leicester', 1884, 'King Power Stadium', 'King Power International Group');
 insert into teams values('Liverpool', 1892, 'Anfield', 'Fenway Sports Group');
-insert into teams values('Manchester City', 1880, 'City of Manchester Stadium', 'City Football Group');
+insert into teams values('Man City', 1880, 'City of Manchester Stadium', 'City Football Group');
 
 --Arsenal players
 insert into players values('David Ospina', 13, 'Arsenal', 'Colombia', 'GoalKeeper');
