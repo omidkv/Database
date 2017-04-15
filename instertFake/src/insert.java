@@ -105,9 +105,9 @@ public class Insert
     stadiums.put(teams.Middles, "'Riverside Stadium'");
     stadiums.put(teams.SouthHampton, "'St Marys Stadium'");
     stadiums.put(teams.Stoke, "'bet365 Stadium'");
-    stadiums.put(teams.Sunderland, "Stadium of Light'");
+    stadiums.put(teams.Sunderland, "'Stadium of Light'");
     stadiums.put(teams.Swansea, "'Liberty Stadium'");
-    stadiums.put(teams.Tottenham, "White Hart Lane'");
+    stadiums.put(teams.Tottenham, "'White Hart Lane'");
     stadiums.put(teams.Watford, "'Vicarage Road'");
     stadiums.put(teams.WestBrom, "'The Hawthorns'");
     stadiums.put(teams.WestHam, "'London Stadium'");
@@ -523,8 +523,8 @@ void insertEvents(Game game)
 
     writer(game.awayTeam,awayTime,String.valueOf(game.gameId),player2A,"'sub out'");
     writer(game.awayTeam,awayTime,String.valueOf(game.gameId),player1A,"'sub in'");
-    writer(game.awayTeam,homeTime,String.valueOf(game.gameId),player2H,"'sub out'");
-    writer(game.awayTeam,homeTime,String.valueOf(game.gameId),player1H,"'sub in'");
+    writer(game.homeTeam,homeTime,String.valueOf(game.gameId),player2H,"'sub out'");
+    writer(game.homeTeam,homeTime,String.valueOf(game.gameId),player1H,"'sub in'");
 
 
 

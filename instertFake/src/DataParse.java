@@ -111,7 +111,8 @@ public class DataParse {
         String[] data = date.split("/");
         if(data[0].length() == 1) data[0] = "0"+data[0];
         if(data[1].length() == 1) data[1] = "0"+data[1];
-        newDate = "20"+data[2]+":"+data[1]+":"+data[0];
+        if(data[2].length() == 2) data[2] = "20"+data[2];
+        newDate = "'"+data[2] + ":" + data[1] + ":" + data[0]+"'";
 
 
         return newDate;
