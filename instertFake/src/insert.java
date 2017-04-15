@@ -1,6 +1,7 @@
 import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Random;
 
 /**
  * Created by family on 4/9/17.
@@ -11,7 +12,9 @@ public class insert
   HashMap<teams, ArrayList<player>> totals = new HashMap<>();
   HashMap <teams, String> stadiums = new HashMap<>();
 
-  String eventFile = "./gameEvents";
+  Random rand = new Random();
+
+  String eventFile = "./gameEvents.sql";
 
   BufferedWriter bw;
   FileWriter fw;
@@ -80,6 +83,7 @@ public class insert
     {
       return teamName;
     }
+    public static teams get(String team){ return teams.valueOf(team);}
   }
   void setStadiums()
   {
@@ -434,24 +438,160 @@ public class insert
     }
   }
 
-void insertEvents()
+void insertEvents(Game game)
 {
-  for(int i = 0; i < game.homeTeamScore; i++)
+
+  ArrayList<player> homeTeamPlayers = totals.get(teams.get(game.homeTeam));
+  ArrayList<player> awayTeamPlayers = totals.get(teams.get(game.awayTeam));
+
+  Integer goalsH = Integer.valueOf(game.goalH);
+  Integer goalsA = Integer.valueOf(game.goalA);
+  Integer foulsH = Integer.valueOf(game.foulsH);
+  Integer foulsA = Integer.valueOf(game.foulsA);
+  Integer yellowH = Integer.valueOf(game.yellowH);
+  Integer yellowA = Integer.valueOf(game.yellowA);
+  Integer redH = Integer.valueOf(game.redH);
+  Integer redA = Integer.valueOf(game.redA);
+  Integer cornersH = Integer.valueOf(game.cornersH);
+  Integer cornersA = Integer.valueOf(game.cornersA);
+  for(int i = 0; i < goalsH; i++)
   {
-    bw
+    player player = homeTeamPlayers.get(rand.nextInt(homeTeamPlayers.size()));
+    writer(game.homeTeam,String.valueOf(rand.nextInt(90)),String.valueOf(game.gameId),player,"'goal'");
+  }
+  for(int i = 0; i < goalsA; i++)
+  {
+    player player = awayTeamPlayers.get(rand.nextInt(awayTeamPlayers.size()));
+    writer(game.awayTeam,String.valueOf(rand.nextInt(90)),String.valueOf(game.gameId),player,"'goal'");
+  }
+
+  for(int i = 0; i < foulsH; i++)
+  {
+    player player = homeTeamPlayers.get(rand.nextInt(homeTeamPlayers.size()));
+    writer(game.homeTeam,String.valueOf(rand.nextInt(90)),String.valueOf(game.gameId),player,"'foul'");
+  }
+  for(int i = 0; i < foulsA; i++)
+  {
+    player player = awayTeamPlayers.get(rand.nextInt(awayTeamPlayers.size()));
+    writer(game.awayTeam,String.valueOf(rand.nextInt(90)),String.valueOf(game.gameId),player,"'foul'");
+  }
+  for(int i = 0; i < yellowH; i++)
+  {
+    player player = homeTeamPlayers.get(rand.nextInt(homeTeamPlayers.size()));
+    writer(game.homeTeam,String.valueOf(rand.nextInt(90)),String.valueOf(game.gameId),player,"'yellow card'");
+  }
+  for(int i = 0; i < yellowA; i++)
+  {
+    player player = awayTeamPlayers.get(rand.nextInt(awayTeamPlayers.size()));
+    writer(game.awayTeam,String.valueOf(rand.nextInt(90)),String.valueOf(game.gameId),player,"'yellow card'");
+  }
+
+
+  for(int i = 0; i < redH; i++)
+  {
+    player player = homeTeamPlayers.get(rand.nextInt(homeTeamPlayers.size()));
+    writer(game.homeTeam,String.valueOf(rand.nextInt(90)),String.valueOf(game.gameId),player,"'red card'");
+  }
+  for(int i = 0; i < redA; i++)
+  {
+    player player = awayTeamPlayers.get(rand.nextInt(awayTeamPlayers.size()));
+    writer(game.awayTeam,String.valueOf(rand.nextInt(90)),String.valueOf(game.gameId),player,"'red card'");
+  }
+
+  for(int i = 0; i < cornersH; i++)
+  {
+    player player = homeTeamPlayers.get(rand.nextInt(homeTeamPlayers.size()));
+    writer(game.homeTeam,String.valueOf(rand.nextInt(90)),String.valueOf(game.gameId),player,"'corner'");
+  }
+  for(int i = 0; i < cornersA; i++)
+  {
+    player player = awayTeamPlayers.get(rand.nextInt(awayTeamPlayers.size()));
+    writer(game.awayTeam,String.valueOf(rand.nextInt(90)),String.valueOf(game.gameId),player,"'corner'");
+  }
+  for(int i = 0; i<3; i++)
+  {
+    String awayTime = String.valueOf(rand.nextInt(90));
+    String homeTime = String.valueOf(rand.nextInt(90));
+
+
+    player player2A = awayTeamPlayers.get(rand.nextInt(awayTeamPlayers.size()));
+    player player2H = homeTeamPlayers.get(rand.nextInt(homeTeamPlayers.size()));
+    player player1A = awayTeamPlayers.get(rand.nextInt(awayTeamPlayers.size()));
+    player player1H = homeTeamPlayers.get(rand.nextInt(homeTeamPlayers.size()));
+
+    writer(game.awayTeam,awayTime,String.valueOf(game.gameId),player2A,"'sub out'");
+    writer(game.awayTeam,awayTime,String.valueOf(game.gameId),player1A,"'sub in'");
+    writer(game.awayTeam,homeTime,String.valueOf(game.gameId),player2H,"'sub out'");
+    writer(game.awayTeam,homeTime,String.valueOf(game.gameId),player1H,"'sub in'");
+
+
+
   }
 }
-void writer()
+
+void writer(String team, String time, String gameId,player player,String event)
 {
-  String
-}
-  public insert()
+  String first = "insert into events values(";
+  String sep = ",";
+  String end = ");\n";
+  team = "'"+team+"'";
+  String added = first+gameId+sep+time+sep+player.name+sep+player.num+sep+team+sep+event+end;
+  try
   {
+    bw.write(added);
+  } catch (IOException e)
+  {
+    e.printStackTrace();
+  }
+}
+  public static void main(String[] args)
+  {
+    insert in = new insert();
+    in.read();
+    in.inser();
+    in.setStadiums();
+
+
+    try
+    {
+
+      String content = "This is the content to write into file\n";
+
+      in.fw = new FileWriter(in.eventFile);
+      in.bw = new BufferedWriter(in.fw);
+
+      System.out.println("Done");
+
+    } catch (IOException e)
+    {
+
+      e.printStackTrace();
+
+    }
+    Game game = new Game(1,"Arsenal","Liverpool","2","4",
+            "14","13","12","10","1","2","0","0");
+
+    in.insertEvents(game);
+    in.close();
+
+  }
+  public void close()
+  {
+    try
+    {
+      bw.close();
+      fw.close();
+    } catch (IOException e)
+    {
+      e.printStackTrace();
+    }
+  }
+public insert()
+  {
+
     read();
     inser();
     setStadiums();
-
-
     try
     {
 
