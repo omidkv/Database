@@ -21,14 +21,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Insert.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Insert.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Insert.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9315">
-              <caret line="627" column="46" lean-forward="false" selection-start-line="627" selection-start-column="46" selection-end-line="627" selection-end-column="46" />
+            <state relative-caret-position="7616">
+              <caret line="587" column="26" lean-forward="true" selection-start-line="587" selection-start-column="26" selection-end-line="587" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Competitions.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Competitions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="33" column="85" lean-forward="false" selection-start-line="33" selection-start-column="85" selection-end-line="33" selection-end-column="85" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Comps.sql" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Comps.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="73" lean-forward="true" selection-start-line="15" selection-start-column="73" selection-end-line="15" selection-end-column="73" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -58,7 +80,7 @@
       <file leaf-file-name="gameEvents11.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gameEvents11.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-289462">
+            <state relative-caret-position="-288679">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -106,6 +128,7 @@
       <find>que</find>
       <find>gameId</find>
       <find>for</find>
+      <find>crys</find>
     </findStrings>
     <replaceStrings>
       <replace>stadiums</replace>
@@ -127,6 +150,7 @@
         <option value="$PROJECT_DIR$/gameEvents.sql" />
         <option value="$PROJECT_DIR$/src/DataParse.java" />
         <option value="$PROJECT_DIR$/src/Insert.java" />
+        <option value="$PROJECT_DIR$/src/Competitions.java" />
       </list>
     </option>
   </component>
@@ -138,8 +162,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="161" />
-    <option name="y" value="26" />
+    <option name="x" value="120" />
+    <option name="y" value="171" />
     <option name="width" value="1004" />
     <option name="height" value="705" />
   </component>
@@ -209,7 +233,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Unnamed (1)">
+  <component name="RunManager" selected="Application.Unnamed (2)">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -444,9 +468,25 @@
       <envs />
       <method />
     </configuration>
-    <list size="2">
+    <configuration default="false" name="Unnamed (2)" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="Competitions" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="instertFake" />
+      <envs />
+      <method />
+    </configuration>
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Application.Unnamed" />
       <item index="1" class="java.lang.String" itemvalue="Application.Unnamed (1)" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Unnamed (2)" />
     </list>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
@@ -487,7 +527,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="161" y="26" width="1004" height="705" extended-state="0" />
+    <frame x="120" y="171" width="1004" height="705" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -732,14 +772,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gameEvents11.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-289462">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gameEvents10.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -748,13 +780,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/gameEvents11.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-288679">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Insert.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9315">
-          <caret line="627" column="46" lean-forward="false" selection-start-line="627" selection-start-column="46" selection-end-line="627" selection-end-column="46" />
+        <state relative-caret-position="7616">
+          <caret line="587" column="26" lean-forward="true" selection-start-line="587" selection-start-column="26" selection-end-line="587" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Competitions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="33" column="85" lean-forward="false" selection-start-line="33" selection-start-column="85" selection-end-line="33" selection-end-column="85" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Comps.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="73" lean-forward="true" selection-start-line="15" selection-start-column="73" selection-end-line="15" selection-end-column="73" />
+          <folding />
         </state>
       </provider>
     </entry>
